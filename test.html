@@ -1,0 +1,70 @@
+<html>
+<title>Kyy</title>
+		<style> body { background-color: rgb(0, 0, 0) }</style>
+<font color="white">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<body>
+	<img src="css/narto1.png" width="1500" height="250" />
+<div class="w3-container">
+	<hr>
+</div>
+<div class="w3-bar w3-sand">
+ <button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button> 
+ <button class="w3-bar-item w3-button" onclick="openKota('Bandung')">Bandung</button>    
+ <button class="w3-bar-item w3-button" onclick="openKota('Garut')">Garut</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Tasik')">Tasik</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Soreang')">Soreang</button>
+    <div class="w3-dropdown-hover">
+        <button class="w3-button">Dropdown</button>
+		   <div class="w3-dropdown-content w3-bar-block w3-card-4">
+ <button class="w3-bar-item w3-button" onclick="openKota('Home')">Home</button> 
+ <button class="w3-bar-item w3-button" onclick="openKota('Bandung')">Bandung</button>    
+ <button class="w3-bar-item w3-button" onclick="openKota('Garut')">Garut</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Tasik')">Tasik</button>
+ <button class="w3-bar-item w3-button" onclick="openKota('Soreang')">Soreang</button>
+           </div>
+    </div>
+</div>
+<div id="Home" class="w3-container kota w3-animate-fading" style="display:none">
+	<h2>Profile</h2>
+	<p>Nama : Moch Dicky Al Fauzi</p>
+	<p>Nim : 10123182</p>
+</div>
+<div id="Bandung" class="w3-container kota w3-animate-zoom" style="display:none">
+ <h2>Bandung</h2>
+ <img src="css/p1.jpg" width="1400" height="600" />
+ <p>Dikenal dengan Julukan Kota Kembang, adalah Ibu Kota dari Provinsi Jawa Barat</p>
+ <p>w3-animate-zoom</p>
+</div>
+<div id="Garut" class="w3-container kota w3-animate-bottom" style="display:none">
+ <h2>Garut</h2>
+ <img src="css/p2.jpg" width="1400" height="600" />
+ <p>Dikenal dengan Julukan Kota Dodol, dan jaman juga dikenal dengan Jeruk Garut atau Domba
+Garut</p>
+ <p>w3-animate-bottom</p>
+</div>
+<div id="Tasik" class="w3-container kota w3-animate-left" style="display:none">
+ <h2>Tasikmalaya</h2>
+ <img src="css/p3.jpg" width="1400" height="600" />
+ <p>Tasikmalaya Dikenal dengan Julukan Kota Intan, dan Kota Kerajinan Tangan</p>
+ <p>w3-animate-left</p>
+</div>
+<div id="Soreang" class="w3-container kota w3-animate-fading"  syle="display:none">
+ <h2>Soreang</h2>
+ <img src="css/p4.jpg">
+ <p>w3-animate-fading</p>
+</div>
+<script>
+function openKota(namakota) {
+ var i;
+ var x = document.getElementsByClassName("kota");
+ for (i = 0; i < x.length; i++) {
+ x[i].style.display = "none";
+ }
+ document.getElementById(namakota).style.display = "block";
+}
+</script>
+</body>
+</html>
